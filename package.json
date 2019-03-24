@@ -1,14 +1,13 @@
 {
-  "name": "cc_catalog_client_library",
+  "name": "cc_search_library",
   "version": "1.0.0",
-  "description": "Node.js library for accessing CC Catalog's API",
+  "description": "JavaScript client library for obtaining search data from CC Catalog API",
   "main": "./lib/client.js",
   "scripts": {
     "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
     "test": "jest"
   },
   "author": "Ahmed Karaman",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.18.0"
   },
