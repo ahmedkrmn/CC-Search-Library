@@ -20,4 +20,4 @@ Catalog.imageSearch({ q: "Sun,Beach", pagesize: 12, li: ["BY-NC-SA", "BY"] })
 
 ## Library Docs
 
-Usage documentation for the library is available [here]()
+Usage documentation for the library is available [here](https://ahmedkrmn.github.io/CC-Search-Library/)
