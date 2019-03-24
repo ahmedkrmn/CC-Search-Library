@@ -1,0 +1,18 @@
+{
+  "name": "cc_catalog_api_client_library",
+  "version": "1.0.0",
+  "description": "Node.js library for accessing CC Catalog's API",
+  "main": "./lib/client.js",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "author": "Ahmed Karaman",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.18.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.15.3",
+    "jest": "^24.5.0"
+  }
+}
