@@ -5,7 +5,7 @@
   "main": "./lib/client.js",
   "scripts": {
     "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "author": "Ahmed Karaman",
   "dependencies": {
