@@ -4,18 +4,20 @@
   "description": "JavaScript client library for obtaining search data from CC Catalog API",
   "main": "./lib/client.js",
   "scripts": {
-    "generate-docs": "node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
+    "generate-docs": "rm -rf ./docs && node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
     "test": "jest --coverage"
   },
   "author": "Ahmed Karaman",
   "dependencies": {
-    "axios": "^0.18.0"
+    "axios": "^0.18.0",
+    "dotenv": "^7.0.0"
   },
   "devDependencies": {
     "docdash": "^1.0.3",
     "eslint": "^5.15.3",
     "jest": "^24.5.0",
     "jsdoc": "^3.5.5",
-    "minami": "^1.2.3"
+    "minami": "^1.2.3",
+    "nock": "^10.0.6"
   }
 }
