@@ -4,7 +4,7 @@
   "description": "JavaScript client library for obtaining search data from CC Catalog API",
   "main": "./lib/client.js",
   "scripts": {
-    "generate-docs": "rm -rf ./docs && node_modules/.bin/jsdoc --configure .jsdoc.json --verbose",
+    "generate-docs": "rm -rf ./docs && jsdoc --configure .jsdoc.json --verbose",
     "test": "jest --coverage"
   },
   "author": "Ahmed Karaman",
