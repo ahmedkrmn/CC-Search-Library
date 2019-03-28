@@ -53,7 +53,7 @@ describe("Catalog", () => {
       .query(true)
       .reply(200, mock);
 
-    it("should return search results when queries are passed ", async () => {
+    it("should return search results when search queries are passed ", async () => {
       expect.assertions(1);
       const Catalog = new catalog();
       const res = await Catalog.imageSearch({
@@ -75,6 +75,31 @@ describe("Catalog", () => {
       } catch (err) {
         expect(err).toBe("Request failed with status code 400");
       }
+    });
+  });
+
+  describe("imageSearchByCreator()", () => {
+    nock(BASE_URL)
+      .get("/image/search")
+      .query({ creator: "James" })
+      .reply(200, mock);
+
+    it("should return images by creator when creator name is passed", async () => {
+      expect.assertions(1);
+      const Catalog = new catalog();
+      const res = await Catalog.imageSearchByCreator("James");
+      expect(res.result_count).toBeTruthy();
+    });
+
+    nock(BASE_URL)
+      .get("/image/search")
+      .query({ creator: "James", pagesize: 5 })
+      .reply(200, mock);
+    it("should return images by creator with a set pagesize if creator name and page size are passed", async () => {
+      expect.assertions(1);
+      const Catalog = new catalog();
+      const res = await Catalog.imageSearchByCreator("James", { pagesize: 5 });
+      expect(res.results.length).toBe(5);
     });
   });
 });
