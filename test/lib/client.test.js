@@ -73,7 +73,7 @@ describe("Catalog", () => {
       try {
         await Catalog.imageSearch();
       } catch (err) {
-        expect(err).toBe("Request failed with status code 400");
+        expect(err).toBe("400 Bad Request");
       }
     });
   });

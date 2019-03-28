@@ -9,8 +9,8 @@
   },
   "author": "Ahmed Karaman",
   "dependencies": {
-    "axios": "^0.18.0",
-    "dotenv": "^7.0.0"
+    "dotenv": "^7.0.0",
+    "node-fetch": "^2.3.0"
   },
   "devDependencies": {
     "docdash": "^1.0.3",
