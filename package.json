@@ -7,15 +7,15 @@
     "generate-docs": "rm -rf ./docs && jsdoc --configure .jsdoc.json --verbose",
     "test": "jest --coverage",
     "upgrade": "rm -rf node_modules && npm install",
-    "build": "webpack --env dev && webpack --env build",
-    "dev": "webpack --progress --colors --watch --env dev"
+    "build-prod": "webpack --env dev && webpack --env build",
+    "build-dev": "webpack --progress --colors --watch --env dev"
   },
   "author": "Ahmed Karaman",
   "dependencies": {
-    "dotenv": "^7.0.0",
     "node-fetch": "^2.3.0"
   },
   "devDependencies": {
+    "dotenv": "^7.0.0",
     "docdash": "^1.0.3",
     "eslint": "^5.15.3",
     "jest": "^24.5.0",
