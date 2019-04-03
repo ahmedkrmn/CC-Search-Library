@@ -16,7 +16,7 @@ if (env === "build") {
 }
 
 const config = {
-  mode, // Sets the value of mode to build OR development
+  mode, // Sets the value of mode to production OR development
   entry: __dirname + "/lib/catalog.js",
   devtool: "inline-source-map",
   output: {
