@@ -6,7 +6,7 @@ You can check the official [API Page](https://api.creativecommons.engineering/) 
 
 ## Setup
 
-To start using this library, you need a `client_id` and a `client_secret`. You can register [here](https://api.creativecommons.engineering/oauth2/register) and recieve your credentials.
+To start using this library, you need a `client_id` and a `client_secret`. You can register [here](https://api.creativecommons.engineering/oauth2/register) and recieve your credentials. (*A new function will be added later to the library to facilitate the registration process.*)
 
 1. Install [Node.js](https://nodejs.org/en/)
 
@@ -18,13 +18,13 @@ To start using this library, you need a `client_id` and a `client_secret`. You c
    npm install
    ```
 
-4. Edit the `config.js` file in the root directory to add your `client_id` and `client_secret`.
-
-5. Import the library in your JavaScript file.
+4. Import the library in your JavaScript file.
 
    ```javascript
    const catalog = require("./lib/catalog");
    ```
+
+**Or, you can just use the bundled version in the `dist` directory and import it in your HTML within a `<script>` tag.**
 
 ## Example Usage
 
@@ -53,4 +53,5 @@ npm run test
 
 ## Library Docs
 
-Usage documentation for the library is available [here](https://ahmedkrmn.github.io/CC-Search-Library/).
+Documentation is generated using [JSDocs](<http://usejsdoc.org/>) and rendered using the [docdash](<https://github.com/clenemt/docdash>) theme.
+The full documentation for the library is available [here](https://ahmedkrmn.github.io/CC-Search-Library/).
